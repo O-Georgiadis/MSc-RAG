@@ -6,6 +6,11 @@ from langchain_openai import OpenAIEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 
+load_dotenv(override=True)
+
+DB_NAME = str(Path(__file__).parent.parent / "vector_db")
+
+
 # PDF-to-text extractor
 data_path = Path(__file__).parent/"data"
 
@@ -24,10 +29,7 @@ for pdf_file in data_path.glob("*.pdf"):
 
     # print(f"{pdf_file.name}: {len(elements)} elements")
 
-load_dotenv(override=True)
-
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-# embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+#===============================================================================
 
 
 def create_chunks(all_documents):
@@ -47,4 +49,10 @@ def create_chunks(all_documents):
     print(f"Created {len(chunks)} chunks for embeddings")
     return chunks
 
-chunks = create_chunks(all_documents)
+
+
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+# embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+
+def create_embeddings(chunks):
+    pass
