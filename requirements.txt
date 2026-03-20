@@ -1,2 +1,15 @@
 unstructured[pdf]
+python-dotenv
+chromadb
+
+langchain
+langchain-huggingface
+langchain-openai
+langchain-chroma
+langchain-text-splitters
+
+# Sentence transformers for HuggingFace embeddings
 sentence-transformers
+
+# NLTK for sentence tokenization (used by unstructured)
+nltk
