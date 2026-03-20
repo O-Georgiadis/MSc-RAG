@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+certificate.pem
+.DS_Store
+*.pdf
+
+# Vector databases
+vector_db/
+
+# Chroma artifacts
+*.sqlite3
