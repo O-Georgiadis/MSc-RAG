@@ -7,7 +7,7 @@ from langchain_chroma import Chroma
 
 
 MODEL = "gpt-4.1-nano"
-DB_NAME = str(Path(__file__).parent.parent / "vector_db")
+DB_NAME = str(Path(__file__).parent / "vector_db")
 
 # embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
