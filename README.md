@@ -1,18 +1,32 @@
-# MSc RAG - In Progress
+# MSc RAG
 
-Retrieval-Augmented Generation (RAG) pipeline for querying MSc course slides.
+Retrieval-Augmented Generation pipeline for querying MSc course slides.
 
-## Current Status
+## What it does
 
-- ✅ PDF ingestion working
-- ✅ Vector database created
-- 🔄 Chat interface coming soon
+Ask questions in natural language and get answers from your lecture slides.
 
+## Features
 
-## What's Done
-- `ingest.py` - Extracts text from PDFs and creates vector store
-- Vector database ready for queries
+- PDF text extraction using unstructured
+- Vector embeddings with HuggingFace
+- ChromaDB for semantic search
+- Chat interface with history
+- Gradio UI with context display
 
-## Next Steps
-- Build chat interface (`app.py`)
-- Add Gradio UI for Q&A
+## Tech Stack
+
+- Python
+- LangChain
+- ChromaDB
+- HuggingFace Embeddings (sentence-transformers)
+- Gradio
+- Unstructured (PDF extraction)
+- NLTK
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+python ingest.py
+python app.py
