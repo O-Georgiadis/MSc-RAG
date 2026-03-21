@@ -10,8 +10,8 @@ from langchain_core.messages import SystemMessage, HumanMessage, AIMessage
 MODEL = "gpt-4.1-nano"
 DB_NAME = str(Path(__file__).parent / "vector_db")
 
-# embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+# embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 RETRIEVAL_K = 10
 
 SYSTEM_PROMPT = """
