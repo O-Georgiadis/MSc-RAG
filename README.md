@@ -1,4 +1,4 @@
-# MSc RAG
+# MSc RAG Assistant
 
 Retrieval-Augmented Generation pipeline for querying MSc course slides.
 
