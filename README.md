@@ -24,6 +24,8 @@ Ask questions in natural language and get answers from your lecture slides.
 - Unstructured (PDF extraction)
 - NLTK
 
+![Gradio UI](images/Gradio_running.png)
+
 ## Setup
 
 ```bash
